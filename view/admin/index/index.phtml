@@ -1,0 +1,135 @@
+<?php
+/**
+ * Pacific NM (https://www.pacificnm.com)
+ *
+ * @link      https://github.com/pacificnm/pnm for the canonical source repository
+ * @copyright Copyright (c) 20011-2016 Pacific NM USA Inc. (https://www.pacificnm.com)
+ * @license
+ */
+?>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+				<h3 class="box-title">
+					<i class="<?php echo $this->layout()->pageIcon; ?>" aria-hidden="true"></i>
+					<?php echo $this->translate("Admin"); ?> 
+				</h3>
+				<div class="box-tools">
+				
+				</div>
+			</div>
+			<div class="box-body box-profile">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Acl')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("acl-index"); ?>" title="<?php echo $this->translate("Rules"); ?>"><?php echo $this->translate("Rules"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("acl-role-index"); ?>" title="<?php echo $this->translate("Roles"); ?>"><?php echo $this->translate("Roles"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("acl-resource-index"); ?>" title="<?php echo $this->translate("Roles"); ?>"><?php echo $this->translate("Resources"); ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Auth')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("auth-index"); ?>" title="<?php echo $this->translate("List"); ?>"><?php echo $this->translate("List"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("auth-create"); ?>" title="<?php echo $this->translate("New"); ?>"><?php echo $this->translate("New"); ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Config')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("config-index"); ?>" title="<?php echo $this->translate("View"); ?>"><?php echo $this->translate("View"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("config-update"); ?>" title="<?php echo $this->translate("Edit"); ?>"><?php echo $this->translate("Edit"); ?></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Modules')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("module-index"); ?>" title="<?php echo $this->translate("List"); ?>"><?php echo $this->translate("List"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("module-create"); ?>" title="<?php echo $this->translate("New"); ?>"><?php echo $this->translate("New"); ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Controllers')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("controller-index"); ?>" title="<?php echo $this->translate("List"); ?>"><?php echo $this->translate("List"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("controller-create"); ?>" title="<?php echo $this->translate("New"); ?>"><?php echo $this->translate("New"); ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Pages')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("page-index"); ?>" title="<?php echo $this->translate("List"); ?>"><?php echo $this->translate("List"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("page-create"); ?>" title="<?php echo $this->translate("New"); ?>"><?php echo $this->translate("New"); ?></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Cron')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("cron-index"); ?>" title="<?php echo $this->translate("List"); ?>"><?php echo $this->translate("List"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("cron-update"); ?>" title="<?php echo $this->translate("New"); ?>"><?php echo $this->translate("New"); ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Log')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("log-index"); ?>" title="<?php echo $this->translate("View"); ?>"><?php echo $this->translate("View"); ?></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<h3 class="profile-username text-center"><?php echo $this->translate('Update')?></h3>
+						<ul class="list-group list-group-unbordered">
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("update-check"); ?>" title="<?php echo $this->translate("Check"); ?>"><?php echo $this->translate("Check"); ?></a>
+							</li>
+							<li class="list-group-item">
+								<a href="<?php echo $this->url("update-install"); ?>" title="<?php echo $this->translate("Install"); ?>"><?php echo $this->translate("Install"); ?></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+			

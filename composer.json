@@ -1,0 +1,21 @@
+{
+    "name": "pacificnm/pacificnm-admin",
+    "description": "Provides admin functions",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Jaimie Garner",
+            "email": "pacificnm@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"php" : ">=5.5",
+    	"zendframework/zendframework" : "~2.5",
+    	"pacificnm/pacificnm-acl" : "dev-master",
+    	"pacificnm/pacificnm-auth" : "dev-master",
+    	"pacificnm/pacificnm-config" : "dev-master",
+    	"pacificnm/pacificnm-cron" : "dev-master"
+    }
+}
