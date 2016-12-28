@@ -21,6 +21,8 @@ class IndexController extends AbstractApplicationController
      */
     public function indexAction()
     {
+        parent::indexAction();
+        
         return new ViewModel(array(
             
         ));

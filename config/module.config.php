@@ -3,7 +3,7 @@ return array(
     'module' => array(
         'Admin' => array(
             'name' => 'Admin',
-            'version' => '1.0.0'
+            'version' => '1.0.3'
         )
         
     ),
@@ -25,6 +25,8 @@ return array(
                 'pageTitle' => 'Admin',
                 'pageSubTitle' => 'Home',
                 'activeMenuItem' => 'admin-index',
+                'icon' => 'fa fa-home',
+                'layout' => 'admin',
                 'activeSubMenuItem' => 'admin-index',
                 'options' => array(
                     'route' => '/admin',
@@ -71,12 +73,13 @@ return array(
                 'route' => 'admin-index',
                 'icon' => 'fa fa-gear',
                 'order' => 99,
+                'location' => 'left',
                 'active' => true,
                 'items' => array(
                     array(
                         'name' => 'Home',
                         'route' => 'admin-index',
-                        'icon' => 'fa fa-gear',
+                        'icon' => 'fa fa-home',
                         'order' => 1,
                         'active' => true,
                     )
