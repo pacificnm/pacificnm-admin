@@ -1,6 +1,6 @@
 # pacificnm-admin
 
-Provides admin management module.
+Provides admin services and management for PacificNM.
 
 File issues at https://github.com/pacificnm/pacificnm-admin/issues
 

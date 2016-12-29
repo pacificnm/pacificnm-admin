@@ -3,7 +3,7 @@ return array(
     'module' => array(
         'Admin' => array(
             'name' => 'Admin',
-            'version' => '1.0.3'
+            'version' => '1.0.4'
         )
         
     ),
