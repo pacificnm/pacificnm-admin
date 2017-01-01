@@ -1,20 +1,27 @@
 <?php
+/**
+ * Pacific NM (https://www.pacificnm.com)
+ *
+ * @link https://github.com/pacificnm/pacificnm-admin for the canonical source repository
+ * @copyright Copyright (c) 20011-2016 Pacific NM USA Inc. (https://www.pacificnm.com)
+ * @license https://github.com/pacificnm/pacificnm-admin/blob/master/LICENSE.md
+ */
 return array(
     'module' => array(
         'Admin' => array(
             'name' => 'Admin',
-            'version' => '1.0.4'
+            'version' => '1.0.5'
         )
-        
-    ),
+    )
+    ,
     'controllers' => array(
         'factories' => array(
-            'Admin\Controller\Index' => 'Admin\Controller\Factory\IndexControllerFactory'
+            'Pacificnm\Admin\Controller\Index' => 'Pacificnm\Admin\Controller\Factory\IndexControllerFactory'
         )
     ),
     'service_manager' => array(
         'factories' => array(
-            'adminMenu' => 'Admin\Service\Factory\MenuServiceFactory'
+            'adminMenu' => 'Pacificnm\Admin\Service\Factory\MenuServiceFactory'
         )
     ),
     'router' => array(
@@ -31,7 +38,7 @@ return array(
                 'options' => array(
                     'route' => '/admin',
                     'defaults' => array(
-                        'controller' => 'Admin\Controller\Index',
+                        'controller' => 'Pacificnm\Admin\Controller\Index',
                         'action' => 'index'
                     )
                 )
@@ -39,11 +46,15 @@ return array(
         )
     ),
     'view_helpers' => array(
-        'factories' => array(
-            'AdminAsideMenu' => 'Admin\View\Helper\Factory\AdminAsideMenuFactory'
-        )
+        'factories' => array()
     ),
     'view_manager' => array(
+        'controller_map' => array(
+            'Pacificnm\Admin' => true
+        ),
+        'template_map' => array(
+            'pacificnm/admin/index/index' => __DIR__ . '/../view/admin/index/index.phtml'
+        ),
         'template_path_stack' => array(
             __DIR__ . '/../view'
         )
@@ -81,11 +92,11 @@ return array(
                         'route' => 'admin-index',
                         'icon' => 'fa fa-home',
                         'order' => 1,
-                        'active' => true,
+                        'active' => true
                     )
                 )
             )
         )
-    ),
-    
-);
+    )
+)
+;
