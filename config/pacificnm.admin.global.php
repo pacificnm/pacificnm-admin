@@ -10,7 +10,7 @@ return array(
     'module' => array(
         'Admin' => array(
             'name' => 'Admin',
-            'version' => '1.0.5'
+            'version' => '1.0.6'
         )
     )
     ,
